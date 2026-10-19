@@ -1,0 +1,82 @@
+# InterCase — Донат кейс InterTime
+case-name: "&6&lДонат кейс"
+# Відстань від кейса до 8 предметів
+ring-radius: 3.6
+# -1 = випадкова. Для тесту: 0 падіння+рулетка, 1 падіння в сундук+вихор (обидві авто),
+# 2 мечі, 3 моби, 4 сундуки, 5 кристали (в 2-5 гравець б'є сам)
+force-animation: -1
+# Скільки секунд чекати удару гравця (потім вибір робиться випадково)
+pick-timeout-seconds: 45
+# Голова-ключ "Golden Key" (minecraft-heads.com, автор SakurasouShiina). Порожньо = звичайний гачок.
+key-head-value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVlZmE0Y2QyYTU1OGU0YTgxMmUyZWE3NTQxZTYyNzUwYjk2YmExZDgyYzFkYTlmZDVmMmUzZmI5MzA4YzYzNSJ9fX0="
+
+# Привілегії від НАЙНИЖЧОЇ до НАЙВИЩОЇ. chance — шанс (сума = 100).
+# color — колір привілегії, icon — предмет, що падає.
+# Команда виконується від консолі, {player} = нік гравця (потрібен LuckPerms і група з такою назвою).
+rewards:
+  - name: "Tick"
+    color: "#AAAAAA"
+    icon: CLOCK
+    chance: 22
+    commands:
+      - "lp user {player} parent add tick"
+  - name: "Pulse"
+    color: "#55FF55"
+    icon: REDSTONE
+    chance: 17
+    commands:
+      - "lp user {player} parent add pulse"
+  - name: "Chrono"
+    color: "#55FFFF"
+    icon: RECOVERY_COMPASS
+    chance: 14
+    commands:
+      - "lp user {player} parent add chrono"
+  - name: "Epoch"
+    color: "#4D8DFF"
+    icon: ECHO_SHARD
+    chance: 11
+    commands:
+      - "lp user {player} parent add epoch"
+  - name: "Era"
+    color: "#B266FF"
+    icon: AMETHYST_SHARD
+    chance: 9
+    commands:
+      - "lp user {player} parent add era"
+  - name: "Eon"
+    color: "#FF66CC"
+    icon: PRISMARINE_CRYSTALS
+    chance: 7.5
+    commands:
+      - "lp user {player} parent add eon"
+  - name: "Paradox"
+    color: "#FF9933"
+    icon: ENDER_EYE
+    chance: 6
+    commands:
+      - "lp user {player} parent add paradox"
+  - name: "Temporal"
+    color: "#FFE14D"
+    icon: HEART_OF_THE_SEA
+    chance: 5
+    commands:
+      - "lp user {player} parent add temporal"
+  - name: "Zenith"
+    color: "#FF4D4D"
+    icon: END_CRYSTAL
+    chance: 4
+    commands:
+      - "lp user {player} parent add zenith"
+  - name: "Eternal"
+    color: "#D4145A"
+    icon: NETHER_STAR
+    chance: 3
+    commands:
+      - "lp user {player} parent add eternal"
+  - name: "Infinity"
+    color: "#FFFFFF"
+    icon: DRAGON_EGG
+    chance: 1.5
+    commands:
+      - "lp user {player} parent add infinity"
